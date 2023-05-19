@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTS Nilai</title>
+</head>
+<style>
+    table{
+        text-align: center;
+        color: pink 
+    }
+    th{
+        background-color: green;
+    }
+</style>
+<body>
+    <center><table border="2"></center>
+        <tr>
+            <th colspan="4"><div id="username"></div></th>
+        </tr>
+        <tr>
+            <td bgcolor="purple">NO.</td>
+            <td  bgcolor="red">Mata Pelajaran</td>
+            <td  bgcolor="blue">Nilai Ulangan</td>
+            <td  bgcolor="green">Indeks Nilai</td>
+        </tr>
+        <tr>
+            <td  bgcolor="aquamarine">1</td>
+            <td  bgcolor="pink">Bahasa Indonesia</td>
+            <td  bgcolor="dark gray"><div id="bind"></div></td>
+            <td  bgcolor="yellow"><div id="bind_index"></div></td>
+        </tr>
+        <tr>
+            <td  bgcolor="brown">2</td>
+            <td  bgcolor="dark brown">Bahasa Inggris</td>
+            <td  bgcolor="orange"><div id="bing"></div></td>
+            <td  bgcolor="navy"><div id="bing_index"></div></td>
+        </tr>
+        <tr>
+            <td  bgcolor="coral">3</td>
+            <td  bgcolor="emerald">Matematika</td>
+            <td  bgcolor="turquoise"><div id="mtk"></div></td>
+            <td  bgcolor="mauve"><div id="mtk_index"></div></td>
+        </tr>
+    </table>
+    <script>
+        var username_input = prompt("Masukkan Nama Siswa");
+        username = document.getElementById("username");
+        username.innerHTML = "Daftar Nilai "+username_input;
+
+        //1
+        var bind_input = prompt("Masukkan Nilai Ujian Bahasa Indonesia");
+        bind = document.getElementById("bind");
+        bind.innerHTML = bind_input;
+        bind_index = document.getElementById("bind_index");
+        if (bind_input >= 90){
+            bind_input = "A";
+        } else if (bind_input >= 80){
+            bind_input = "B";
+        } else if (bind_input >= 70){
+            bind_input = "C";
+        } else if (bind_input >= 60) {
+            bind_input = "D";
+        } else if (bind_input >= 0){
+            bind_input = "E";
+        } else {
+            bind_input = "Angka Tidak Valid";
+        }
+        bind_index.innerHTML = bind_input;
+
+        //2
+        var bing_input = prompt("Masukkan Nilai Ujian Bahasa Inggris");
+        bing = document.getElementById("bing");
+        bing.innerHTML = bing_input;
+        bing_index = document.getElementById("bing_index");
+        if (bing_input >= 90){
+            bing_input = "A";
+        } else if (bing_input >= 80){
+            bing_input = "B";
+        } else if (bing_input >= 70){
+            bing_input = "C";
+        } else if (bing_input >= 60){
+            bind_input = "D";
+        } else if (bing_input >= 0){
+            bing_input = "E";
+        } else {
+            bing_input = "Angka Tidak Valid";
+        }
+        bing_index.innerHTML = bing_input;
+
+        var mtk_input = prompt("Masukkan Nilai Ujian Matematika");
+        mtk = document.getElementById("mtk");
+        mtk.innerHTML = mtk_input;
+        mtk_index = document.getElementById("mtk_index");
+        if (mtk_input >= 90){
+            mtk_input = "A";
+        } else if (mtk_input >= 80){
+            mtk_input = "B";
+        } else if (mtk_input >= 70){
+            mtk_input = "C";
+        } else if (mtk_input >= 60){
+            mtk_input = "D";
+        } else if (mtk_input >= 0){
+            mtk_input = "E";
+        } else {
+            mtk_input = "Angka Tidak Valid";
+        }
+        mtk_index.innerHTML = mtk_input;
+
+    </script>
+</body>
+</html>

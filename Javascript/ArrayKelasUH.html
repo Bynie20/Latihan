@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Array Kelas</title>
+</head>
+<style>
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #303030;
+  color: white;
+}
+body{
+    background-color: #303030;
+    text-align: center;
+}
+
+table{
+    border-color: white;
+    width: 30%;
+
+}
+</style>
+<body>
+    <table border="3" align="center">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+        </tr>
+    </thead>
+    <tbody id="table-body">
+    </tbody>
+
+    <script>
+    // Membuat sebuah array dengan nama Kelas
+ var Kelas = ['Adinda Aurelliya','Aditia Setiawan Nugraha','Adrian Aulia Pulungan','Alicca','Arif Ghani Algiffari','Bagas Wisesa','Benedict Farrel Wiro Wibowo Zakaria','Fahri Finoza','Fasya Rizky Maulidiaz','Futayhus Sabil','Galih Parwita','Hasan Akbar Jufry','Ikhwan Nusafa','Kristina Sianturi','Mochamad Aji Febrian','Muhammad Hafiz Buchori','Muhammad Rafi Samudra','Muhammad Rizal Aditama','Nabila Husna Rieany','Nadine Zain Nisrina','Nicolas Ardi Pratama','Radja Aulia Mahesa','Rafael Ginta Sembiring','Ramadhan Rizki Saputra','Rifka Aisyah Safitri','Rio Fadhil Nasrullah','Rizky Bagus Pambudi','Salsabilla Nurul Hassanah','Septriyana Ramadhani','Shirleen Nathania Trixie Oersepuny','Sulthan Rifqi Suparjo','Vika Okta Fitriana','Wisnu Jarodi'];
+
+// Mengambil elemen tbody dari tabel
+ tableBody = document.getElementById('table-body');
+
+// Looping untuk setiap elemen dalam array Kelas dan menambahkan baris baru ke dalam tabel
+for (i = 0; i < Kelas.length; i++) {
+    row = document.createElement('tr');
+   noCell = document.createElement('td');
+   namaCell = document.createElement('td');
+
+   noCell.innerText = i + 1;
+  namaCell.innerText = Kelas[i];
+
+  row.appendChild(noCell);
+  row.appendChild(namaCell);
+
+  tableBody.appendChild(row);
+}
+
+    </script>
+</table>
+</body>
+</html>
