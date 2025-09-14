@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightblue;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 25px;  
+    margin-bottom: 20px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.header{
+    background-color: lightcyan;
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-top: -15px;
+}
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    padding-top: -50px;
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
+}
+.gambar{
+    height: 400px;
+    background-image: url(gambar.webp);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+    padding-top: -100px;
+}
+.head{
+    padding: 40px;
+}
+.head p{
+    margin-top: 10px;
+}
+.fungsi{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    </style>
+</head>
+<body>
+  <div class="header">
+    <ul>
+      <li><a href="Uprak.html">Home</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1 id="judul">Cascading Style Sheets (CSS)</h1>
+    <div class="gambar"></div>
+    <div class="head">
+    <h2>Apa Itu CSS?</h2>
+    <p>CSS adalah singkatan dari cascading style sheets, yaitu bahasa yang digunakan untuk menentukan tampilan dan format halaman website. 
+    Dengan CSS, Anda bisa mengatur jenis font, warna tulisan, dan latar belakang halaman. <br><br>
+    CSS digunakan bersama dengan bahasa markup, 
+    seperti HTML dan XML untuk membangun sebuah website yang menarik dan memiliki fungsi yang berjalan baik.
+    CSS juga berguna untuk mengatasi keterbatasan HTML dalam mengatur format halaman website. 
+    Kenapa demikian? <br> <br>
+    Apabila hanya menggunakan HTML ketika membangun website dengan beberapa halaman, 
+    Anda harus menulis tag untuk sebuah elemen HTML di semua halaman tersebut. <br> <br>
+    Dengan adanya CSS, Anda cukup menulis kode satu kali untuk sebuah elemen HTML untuk diterapkan ke semua halaman. 
+    Nantinya, ketika akan melakukan perubahan, Anda juga cukup melakukan perubahan pada satu kode tadi. Praktis, bukan?</p> <br>
+
+    <h2>Apa Fungsi CSS?</h2>
+    <p>Secara umum, CSS berfungsi untuk mengatur tampilan halaman website berbasis HTML atau bahasa markup lainnya. 
+    Tapi, masih ada beberapa fungsi CSS lainnya, yaitu:</p>
+    <div class="fungsi">
+    <h5>1. Mempercepat Loading Halaman Web</h5>
+    <h5>2. Memudahkan Pengelolaan Kode</h5>
+    <h5>3. Menawarkan Lebih Banyak Variasi Tampilan</h5>
+    <h5>4. Membuat Website Tampil Rapi di Semua Ukuran Layar</h5>
+    </div> <br>
+
+    <h2>Jenis Jenis CSS</h2> <br>
+    <h4>1. Inline CSS</h4>
+    <p>Inline CSS adalah kode CSS yang dituliskan di dalam file HTML. Jenis CSS ini hanya mempengaruhi satu baris kode HTML. <br> <br>
+        Contohnya: "p style="color: green;"
+    </p>
+    
+    <h4>2. Internal CSS</h4>
+    <p>Internal CSS dituliskan di bagian header file HTML. Fungsinya untuk menentukan tampilan sebuah halaman. </p>
+    
+    <h4>3. Eksternal CSS</h4>
+    <p>Sesuai namanya, external CSS adalah kode CSS yang diletakkan di luar dokumen HTML sebagai file </p>
+    </div> 
+    </div>
+
+</body>
+</html>

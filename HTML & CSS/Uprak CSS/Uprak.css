@@ -1,0 +1,39 @@
+#logo{
+    border-radius: 100%;
+    width: 200px;
+	 height: 200px;
+}
+
+#gmail {
+   padding-left: 400px;}
+
+
+.materi{
+    float: right;
+    padding-right: 200px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ .image img{
+    display: block;
+    width: 1300px;
+    height: 400px;
+ }
+
+ h2{
+    color: white;
+    text-align:justify;
+ }
+
+ h3{
+    color: white;
+ }
+
+ u{
+    color: white;
+ }
